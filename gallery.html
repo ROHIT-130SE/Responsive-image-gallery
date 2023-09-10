@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery App</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1375/1375106.png">
+  <style>
+    body {
+      text-align: center;
+      background-color: rgb(84, 82, 82);
+    }
+
+    h1 {
+      color: rgb(246, 244, 248);
+    }
+
+    .grid-container {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 25rem);
+    }
+
+    .grid-container>div>img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .grid-container>div>img:hover {
+      filter: brightness(50%);
+      transition: 1s all;
+      transform: scale(1.2);
+    }
+    .grid-container>div{
+      position: relative;
+      overflow: hidden;
+      font-size: 1.2rem;
+    }
+    .img-title{
+      position: absolute;
+      bottom: 1rem;
+      z-index: 2;
+      color: rgb(252, 248, 248);
+      left: 42%;
+      display: block;
+    }
+
+    .grid-container>div:hover{
+      font-size: 1.5rem;
+      transition: all 0.5s;
+      /* transform: rotate(20deg); */
+    }
+    footer {
+      color: white;
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Photo Gallery App</h1>
+  <div class="grid-container">
+    <div><img src="https://images.unsplash.com/photo-1693761935441-ad0ffad6905b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="nature1">
+      <div class="img-title">Nature#1</div>
+    </div>
+    <div><img src="https://images.unsplash.com/photo-1693165074962-ae564d6b16ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="nature2">
+      <div class="img-title">Nature#2</div>
+    </div>
+    <div><img src="https://images.unsplash.com/photo-1693837107981-82153aa426ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="nature3">
+      <div class="img-title">Nature#3</div>
+    </div>
+    <div><img src="https://images.unsplash.com/photo-1694009606218-eb46476e6300?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="nature4">
+      <div class="img-title">Nature#4</div>
+    </div>
+    <div><img src="https://images.unsplash.com/photo-1693838974932-aa2bb01fc25a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDV8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="nature5">
+      <div class="img-title">Nature#5</div>
+    </div>
+    <div><img src="https://images.unsplash.com/photo-1693754079764-d90b63861dd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="nature6">
+      <div class="img-title">Nature#6</div>
+    </div>
+    <div><img src="https://images.unsplash.com/photo-1693761935254-6d1ae28f45ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDd8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="nature7">
+      <div class="img-title">Nature#7</div>
+    </div>
+    <div><img src="https://images.unsplash.com/photo-1693761935581-1f6a0ab16590?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="nature8">
+      <div class="img-title">Nature#8</div>
+    </div>
+    <div><img src="https://images.unsplash.com/photo-1693057205752-f7cabeaff629?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="nature9">
+      <div class="img-title">Nature#9</div>
+    </div>
+    <div><img src="https://images.unsplash.com/photo-1693970418565-7ecf76761e2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=1000&q=60" alt="nature10">
+      <div class="img-title">Nature#10</div>
+    </div>
+    <div><img src="https://images.unsplash.com/photo-1693928750916-7c1fa6d06aec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=1000&q=60" alt="nature11">
+      <div class="img-title">Nature#11</div>
+    </div>
+    <div><img src="https://images.unsplash.com/photo-1693935597805-f574d2fdc0a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=1000&q=60" alt="nature12">
+      <div class="img-title">Nature#12</div>
+    </div>
+  </div>
+  <footer>Made with heart by Rohit</footer>
+  
+</body>
+</html>
